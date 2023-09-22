@@ -1,7 +1,6 @@
 def diamond(n):
     if n % 2 == 0 or n <= 0:
         return None
-
     mtr = ''
     for i in range(n // 2 + 1):
         mtr += ' ' * (n//2 - i)+ '*' * (i * 2 + 1) + '\n'
