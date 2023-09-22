@@ -8,7 +8,6 @@ def diamond(n):
         mtr += ' ' * (n//2 - i) + '*' * (i * 2 + 1) + '\n'
     return mtr
 
-
 if __name__ == "__main__":
     print(diamond(3))
     print(diamond(5))
