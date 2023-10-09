@@ -1,13 +1,12 @@
-# 3 ternary         https://www.codewars.com/kata/57202aefe8d6c514300001fd
-def sale_hotdogs(n):
-    return 100 * n if n < 5 else 90 * n if n >= 10 else n * 95 
-# 4 lenStr          https://www.codewars.com/kata/58fa273ca6d84c158e000052
-def digits(n):
-    return len(str(n))
 
-# 7 beads           https://www.codewars.com/kata/58712dfa5c538b6fc7000569
+def get_mean(arr,x,y):
+    if x == 1 or y == 1 or x > len(arr) or y > len(arr):
+        return -1
+    a = (sum(arr[:x ]) / len(arr[:x]) + sum(arr[-y:]) / len(arr[-y:])) / 2
+    print(arr[:x])
+    return a
 
-def count_red_beads(n):
-    if n < 2: return 0
-    return (n - 1) * 2
+print(get_mean([1,-1,2,-1],2,3))
+
     
+
